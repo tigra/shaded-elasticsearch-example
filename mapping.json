@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "element": {
+      "properties": {
+        "a": {"type": "string"},
+        "b": {"type": "integer"}
+      }
+    }
+  }
+}
+
