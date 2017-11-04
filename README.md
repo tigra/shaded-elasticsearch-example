@@ -40,9 +40,9 @@ curl -XPUT http://localhost:9200/oldindex -d @mapping.json
 ```
 
 4. Populate it with data:
-
+```
 curl -s -XPOST 'http://localhost:9200/oldindex/element/_bulk?pretty&v' --data-binary "@data.txt"
-
+```
 5. Create new index on a new cluster:
 ```
 curl -XPUT http://localhost:10200/newindex -d @mapping.json
