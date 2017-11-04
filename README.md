@@ -1,4 +1,4 @@
-== Connecting to two Elasticsearch clusters with different versions of API from same JVM ==
+# Connecting to two Elasticsearch clusters with different versions of API from same JVM
 This project demostrates how is it possible to use two different API libraries for Elasticsearch on same JVM, connecting to two clusters running different ES versions, read from old cluster
 (2.3.0) and populate new cluster (5.6.0).
 
@@ -9,7 +9,7 @@ This makes sure that no conflicts occur (In theory, if some classes use reflecti
 This implementation does not preserve the IDs of documents, and works only with simple mappings. The main point of this project is to demonstrate a way to use two versions simultaneously.
 FYI: for migration of indices, such tools as "elasticsearch migration" plugin and "reindex from remote" API do exist. (But maybe in some contexts custom tool may be needed).
 
-== Running ==
+# Running
 (replace localhost below with host names where clusters listen - if they aren't both on localhost)
 
 0. Create shaded artifact for Elasticsearch 2.4.0:
