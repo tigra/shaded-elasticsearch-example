@@ -11,7 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: example:crossindexer:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: example:shaded-elasticsearch2.4.0:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch.client:transport:5.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:5.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:6.4.1" level="project" />

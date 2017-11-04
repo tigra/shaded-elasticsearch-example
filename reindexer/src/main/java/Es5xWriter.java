@@ -15,12 +15,12 @@ import java.util.stream.Stream;
 
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
-public class IndexWriter extends Writer {
+public class Es5xWriter {
 
     TransportClient client;
     private String documentType;
 
-    public IndexWriter(String destClusterName, String host, int port, String documentType) {
+    public Es5xWriter(String destClusterName, String host, int port, String documentType) {
         client = connect(destClusterName, host, port);
         this.documentType = documentType;
         if (client != null) {
@@ -42,7 +42,6 @@ public class IndexWriter extends Writer {
         }
     }
 
-    @Override
     void bulk(Stream<Map<String, Object>> mapStream) {
         BulkRequestBuilder bulkRequest = client.prepareBulk();
 

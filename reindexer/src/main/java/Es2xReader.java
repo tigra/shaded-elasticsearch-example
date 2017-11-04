@@ -17,11 +17,11 @@ import java.util.stream.Stream;
 
 import static old.org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
 
-public class Reader {
+public class Es2xReader {
     public static final int SCROLL_DELAY = 60000;
-    private final Writer writer;
+    private final Es5xWriter writer;
 
-    public Reader(Writer writer) {
+    public Es2xReader(Es5xWriter writer) {
         this.writer = writer;
     }
 
